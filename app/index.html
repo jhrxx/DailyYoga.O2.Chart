@@ -14,6 +14,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dragdealer.css">
     <!-- endbuild -->
 
   </head>
@@ -22,39 +23,114 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">helloworld</h3>
+      <div class="device-preview">
+        <div class="screen-bg dragdealer" id="slider">
+          <div class="handle">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <ul>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+            </ul>
+            <ul>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+            </ul>
+            <ul>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="device-preview">
+        <div class="screen-bg dragdealer" id="scroll">
+          <div class="flex handle" id="content">
+            <div class="box">
+              <div class="bar">5</div>
+              <div class="bar">6</div>
+              <div class="bar">7</div>
+              <div class="bar">8</div>
+              <div class="bar">9</div>
+              <div class="bar">10</div>
+              <div class="bar">11</div>
+            </div>
+            <div class="box">
+              <div class="bar">12</div>
+              <div class="bar">13</div>
+              <div class="bar">14</div>
+              <div class="bar">15</div>
+              <div class="bar">16</div>
+              <div class="bar">17</div>
+              <div class="bar">18</div>
+            </div>
+            <div class="box">
+              <div class="bar">19</div>
+              <div class="bar">20</div>
+              <div class="bar">21</div>
+              <div class="bar">22</div>
+              <div class="bar">23</div>
+              <div class="bar">24</div>
+              <div class="bar">25</div>
+            </div>
+            <div class="box box-4-7">
+              <div class="bar">1</div>
+              <div class="bar">2</div>
+              <div class="bar">3</div>
+              <div class="bar">4</div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="jumbotron">
+
+      <div class="bar-wrap">
         <div class="bar-container">
-          <div class="bar">1</div>
-          <div class="bar">2</div>
-          <div class="bar">3</div>
-          <div class="bar">4</div>
-          <div class="bar">5</div>
-          <div class="bar">6</div>
-          <div class="bar">7</div>
-          <div class="bar">8</div>
-          <div class="bar">9</div>
-          <div class="bar">10</div>
-          <div class="bar">11</div>
-          <div class="bar">12</div>
-          <div class="bar">13</div>
-          <div class="bar">14</div>
-          <div class="bar">15</div>
-          <div class="bar">16</div>
-          <div class="bar">17</div>
-          <div class="bar">18</div>
-          <div class="bar">19</div>
-          <div class="bar">20</div>
-          <div class="bar">21</div>
+          <div class="box box-7">
+            <div class="bar">1</div>
+            <div class="bar">2</div>
+            <div class="bar">3</div>
+            <div class="bar">4</div>
+            <div class="bar">5</div>
+            <div class="bar">6</div>
+            <div class="bar">7</div>
+          </div>
+          <div class="box box-7">
+            <div class="bar">8</div>
+            <div class="bar">9</div>
+            <div class="bar">10</div>
+            <div class="bar">11</div>
+            <div class="bar">12</div>
+            <div class="bar">13</div>
+            <div class="bar">14</div>
+          </div>
+          <div class="box box-6">
+            <div class="bar">15</div>
+            <div class="bar">16</div>
+            <div class="bar">17</div>
+            <div class="bar">18</div>
+            <div class="bar">19</div>
+            <div class="bar">20</div>
+          </div>
+          <!-- <div class="bar">21</div>
           <div class="bar">22</div>
           <div class="bar">23</div>
           <div class="bar">24</div>
@@ -63,9 +139,19 @@
           <div class="bar">27</div>
           <div class="bar">28</div>
           <div class="bar">29</div>
-          <div class="bar">30</div>
+          <div class="bar">30</div> -->
         </div>
       </div>
+    <div class="container">
+      <!-- <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">helloworld</h3>
+      </div> -->
+
 
       <div class="row marketing">
         <div class="col-lg-6">
@@ -84,16 +170,17 @@
         <p>♥ from the Yeoman team</p>
       </div>
     </div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+<div id="content">
+  <div class="content-slides">
+    <div class="slide demo">
+      <div class="inner-wrapper">
+          <div id="demo-simple-slider" class="dragdealer">
+            <div class="handle red-bar" style="perspective: 1000px; backface-visibility: hidden; transform: translateX(239px);">drag me</div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -102,21 +189,22 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script> -->
+        <!-- <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script> -->
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/dragdealer.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
