@@ -310,23 +310,6 @@ Dragdealer.prototype = {
     this.offset.wrapper = Position.get(this.wrapper);
   },
   calculateBounds: function() {
-
-    console.log('left: ', this.options.left)
-    console.log('right: ', this.options.right)
-    console.log('offsetWidth: ',this.wrapper.offsetWidth)
-    // if(this.options.left < 0) {
-    //   this.options.left = this.wrapper.offsetWidth * this.options.left;
-    // }
-    // if(this.options.right < 0) {
-    //   this.options.right = this.wrapper.offsetWidth * this.options.right;
-    // }
-    // if(this.options.top < 0) {
-    //   this.options.top = this.wrapper.offsetHeight * this.options.top;
-    // }
-    // if(this.options.bottom < 0) {
-    //   this.options.bottom = this.wrapper.offsetHeight * this.options.bottom;
-    // }
-
     // Apply top/bottom/left and right padding options to wrapper extremities
     // when calculating its bounds
     var bounds = {
@@ -339,15 +322,12 @@ Dragdealer.prototype = {
     handleHeight = this.handle.offsetHeight;
 
     if (this.options.flex) {
-      console.log("handle: ",this.handle.children);
       var _width = 0, _height = 0;
       for (var i = this.handle.children.length - 1; i >= 0; i--) {
-        console.log(this.handle.children[i]);
         _width += this.handle.children[i].offsetWidth;
         _height += this.handle.children[i].offsetHeight;
-        console.log(this.handle.children[i].offsetWidth)
       };
-      handleWidth = _width+141+141;
+      handleWidth = _width;
       handleHeight = _height;
     }
 
@@ -356,12 +336,6 @@ Dragdealer.prototype = {
     // height of the wrapper, minus the width and height of the handle
     bounds.availWidth = (bounds.right - bounds.left) - handleWidth;
     bounds.availHeight = (bounds.bottom - bounds.top) - handleHeight;
-
-
-    // if(this.handle.className.indexOf('flex')>-1) {
-    //   bounds.availWidth = (bounds.right - bounds.left) - 1453;
-    // }
-    console.log("availWidth: ", bounds.availWidth)
 
     return bounds;
   },

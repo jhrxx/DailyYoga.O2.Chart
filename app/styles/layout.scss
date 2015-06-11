@@ -1,0 +1,76 @@
+body {
+    background-color: #999;
+    background-image: url("http://www.5ss.co/CSS-layout-modules/otis_redding.png");
+    color: #fff;
+    font: 87.5%/1.4 HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    font-family: "Georgia","Times New Roman",serif;
+    padding: 0.5em 0 1em;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Georgia","Times New Roman",serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 328.571%;
+    margin-bottom: 0.2em;
+}
+h1.title {
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+h2 {
+    font-size: 250%;
+    margin-bottom: 0.2em;
+}
+h3 {
+    font-size: 150%;
+    margin-bottom: 0.2em;
+}
+p {
+    margin: 0;
+    padding: 0 0 1em;
+}
+
+.col-wrapper {
+    background-image: url('billie_holiday.png');
+    background-color: #efefef;
+    color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    column-width: 15em;
+    column-gap: 5px;
+    column-rule: 1px solid #ccc;
+    box-shadow: inset 2px 1px 4px 1px rgba(0,0,0,0.2);
+    h1 {
+       column-span: all;
+    }
+    p {
+        break-inside: avoid;
+    }
+    blockquote {
+        break-before: avoid;
+    }
+}
+.test p{margin:15px 0;border:1px solid #000;}
+.normal p{font-style:normal;}
+.italic p{font-style:italic;}
+.oblique p{font-style:oblique;}
+.small-caps span {
+    font-variant: small-caps;
+}

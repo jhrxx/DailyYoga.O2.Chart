@@ -137,9 +137,12 @@ body {
       // height: random(100)px;
       background-color: #43BAEF;
     }
-    &:first-child {
-      margin-left:  43%;
+    .placeholder {
+      width: 35px;
     }
+    // &:first-child {
+    //   margin-left:  43%;
+    // }
     &.box-1-7 {
       min-width: percentage(1/7);
       padding-right: percentage(3/7);
@@ -155,18 +158,26 @@ body {
     &.box-4-7 {
       min-width: percentage(4/7);
       // padding-right: percentage(3/7);
-      margin-right: percentage(3/7);
+      // margin-right: percentage(3/7);
     }
     &.box-5-7 {
       min-width: percentage(5/7);
-      padding-right: percentage(3/7);
+      // padding-right: percentage(3/7);
     }
     &.box-6-7 {
       min-width: percentage(6/7);
-      padding-right: percentage(3/7);
+      // padding-left: percentage(3/7);
     }
   }
-
+  // .box-placeholder-1 {
+  //   min-width: percentage(1/7);
+  // }
+  // .box-placeholder-2 {
+  //   min-width: percentage(2/7);
+  // }
+  .box-placeholder-3 {
+    min-width: percentage(3/7);
+  }
 }
 
 .handle {

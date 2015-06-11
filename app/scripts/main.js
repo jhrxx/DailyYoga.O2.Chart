@@ -1,16 +1,14 @@
-new Dragdealer('scroll',{steps:25, flex: true, x: 1});
+new Dragdealer('scroll',{steps:1, flex: true, x: 1});
 // new Dragdealer('demo-simple-slider',{steps:3});
 var addEvent = function(element, type, callback) {
-
-  if(!element) {
+  if (!element) {
     console.log(element);
-  }else if (element.addEventListener) {
+  } else if (element.addEventListener) {
     element.addEventListener(type, callback, false);
   } else if (element.attachEvent) {
     element.attachEvent('on' + type, callback);
   }
 };
-
 var preventEventDefaults = function(e) {
   if (!e) {
     e = window.event;
